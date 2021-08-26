@@ -1,9 +1,5 @@
 # tmux cheatsheet
 
-start new:
-
-    tmux new -s myname
-
 start new with session name:
 
     tmux new -s myname
@@ -11,14 +7,7 @@ start new with session name:
 attach:
 
     tmux a  #  (or at, or attach)
-
-attach to named:
-
-    tmux a -t myname
-
-list sessions:
-
-    tmux ls
+    tmux a -t myname (attach to a named)
 
 kill session:
 
@@ -51,11 +40,6 @@ In tmux, hit the prefix `ctrl+b` and then:
     q  show pane numbers
     x  kill pane
     ⍽  space - toggle between layouts
-
-## Window/pane surgery
-
-    :joinp -s :2<CR>  move window 2 into a new pane in the current window
-    :joinp -t :1<CR>  move the current pane into a new pane in window 1
 
 * [Move window to pane](http://unix.stackexchange.com/questions/14300/tmux-move-window-to-pane)
 * [How to reorder windows](http://superuser.com/questions/343572/tmux-how-do-i-reorder-my-windows)
